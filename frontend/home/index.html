@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>HiRE HUB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="./index.js"></script>
+  </head>
+  <body>
+    <div class="w-full h-screen text-zinc-800 bg-white" id="main-container">
+      <nav class="w-full h-14 flex items-center justify-around">
+        <span class="text-xl font-semibold m-5"
+          >HIRE<span class="bg-orange-500 p-1 rounded-lg">HUB</span></span
+        >
+        <ul class="flex gap-5">
+          <li><a href="#" class="text-orange-700">Home</a></li>
+
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Find job</a></li>
+          <li><a href="#">Status</a></li>
+          <li class="relative" id="toggle-icon">
+            <a href="#"
+              ><img src="../assests/gear.png" alt="settings" class="w-5 h-5"
+              id="setting-icon"
+            /></a>
+            <ul
+              class="absolute w-max bg-zinc-100 p-2 py-6 flex gap-3 flex-col items-start justify-center rounded-lg"
+              id="toggle-list"
+            >
+              <li><a href="#">Logout</a></li>
+              <li><a href="#" id="light-mode">Light mode</a></li>
+              <li><a href="#" id="dark-mode">Dark mode</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- nav bar end section  -->
+
+      <div
+        id="presentation-container"
+        class="w-full h-1/3  grid place-items-center"
+      >
+        <div>
+          <h1 class="text-xl text-orange-500 capitalize font-bold text-shadow">
+            Get hired now
+          </h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
