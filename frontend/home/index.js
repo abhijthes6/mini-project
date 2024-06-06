@@ -1,4 +1,4 @@
-console.log("test");
+console.log("hello from script...");
 
 let toggleMode = false;
 const toggleList = document.getElementById("toggle-list");
@@ -28,8 +28,7 @@ darkMode.onclick = function(){
     MainContainer.style.color = "white"
     MainContainer.classList.add("bg-zinc-900")
     MainContainer.style.backgroundColor = "black"
-    presentationContainer.style.backgroundColor  = "blck"
-    
+    presentationContainer.style.backgroundColor  = "black"
 }
 
 
