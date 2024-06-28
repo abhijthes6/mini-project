@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="../gloabl-scripts/toggleNavbar.js"></script>
+
+
+  </head>
+  <body class="bg-gray-100">
+    <nav class="w-full h-14 flex items-center justify-around">
+      <span class="text-xl font-semibold m-5"
+        >HIRE<span class="bg-orange-500 p-1 rounded-lg">HUB</span></span
+      >
+      <ul class="flex gap-5">
+        <li><a href="../home/index.html" class="text-orange-700">Home</a></li>
+
+        <li><a href="./index.html">Profile</a></li>
+        <li><a href="../find-jobs/index.html">Find job</a></li>
+        <li><a href="#">Status</a></li>
+        <li class="relative" id="toggle-icon">
+          <a href="#"
+            ><img
+              src="../assests/gear.png"
+              alt="settings"
+              class="w-5 h-5"
+              id="setting-icon"
+          /></a>
+          <ul
+            class="w-max bg-zinc-50 p-2 py-6 flex gap-3 flex-col items-start justify-center rounded-lg shadow-xl absolute z-50 hidden"
+            id="toggle-list"
+          >
+            <li><a href="#" id="light-mode">Light mode</a></li>
+            <li><a href="#" id="dark-mode">Dark mode</a></li>
+            <li>
+              <a
+                href="../credentials//login/index.html"
+                class="text-white text-sm bg-red-500 px-5 rounded-full"
+                >Logout</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <!-- nav bar end section  -->
+    <div class="max-w-4xl mx-auto my-10 bg-white p-6 rounded-lg shadow-lg">
+      <div class="text-center border-b pb-6">
+        <img
+          src="../assests/OIP.jpeg"
+          alt="Profile Picture"
+          class="w-32 h-32 rounded-full mx-auto"
+        />
+        <h1 class="text-2xl font-semibold mt-4">John Doe</h1>
+        <p class="text-gray-600">Software Engineer</p>
+      </div>
+      <div class="mt-6">
+        <h2
+          class="text-xl font-semibold text-orange-600 border-b-2 border-zinc-300 pb-2"
+        >
+          Personal Details
+        </h2>
+        <ul class="mt-4">
+          <li class="mt-2"><strong>Email:</strong> john.doe@example.com</li>
+          <li class="mt-2"><strong>Phone:</strong> (123) 456-7890</li>
+          <li class="mt-2"><strong>Location:</strong> San Francisco, CA</li>
+        </ul>
+      </div>
+      <div class="mt-6">
+        <h2
+          class="text-xl font-semibold text-orange-600 border-b-2 border-zinc-300 pb-2"
+        >
+          Job Skills
+        </h2>
+        <ul class="mt-4 grid grid-cols-5 gap-2">
+          <li class="bg-gray-100 rounded-lg p-1 text-center shadow-md">JavaScript</li>
+          <li class="bg-gray-100 rounded-lg p-1 text-center shadow-md">Python</li>
+          <li class="bg-gray-100 rounded-lg p-1 text-center shadow-md">React</li>
+          <li class="bg-gray-100 rounded-lg p-1 text-center shadow-md">Node.js</li>
+          <li class="bg-gray-100 rounded-lg p-1 text-center shadow-md">SQL</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

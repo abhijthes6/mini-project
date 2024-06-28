@@ -26,24 +26,24 @@ window.addEventListener("load", () => {
 });
 
 function toLightMode() {
-  toggleList.style.color = "black";
-  MainContainer.style.color = "black";
-  MainContainer.style.backgroundColor = "white";
+  toggleList?.style.color = "black";
+  MainContainer?.style.color = "black";
+  MainContainer?.style.backgroundColor = "white";
   MainContainer.classList.remove("bg-zinc-900");
-  presentationContainer.style.backgroundColor = "white";
-  settingsIcon.src = "../assests/gear.png";
+  presentationContainer?.style.backgroundColor = "white";
+  settingsIcon?.src = "../assests/gear.png";
   console.log("dark mode to white");
 }
 
 function toDarkMode() {
-  MainContainer.style.color = "white";
-  toggleList.style.color = "black";
-  MainContainer.classList.add("bg-zinc-900");
-  MainContainer.style.backgroundColor = "black";
-  presentationContainer.style.backgroundColor = "black";
-  settingsIcon.src = "../assests/gear-white.png";
+  MainContainer?.style.color = "white";
+  toggleList.style?.color = "black";
+  MainContainer?.classList.add("bg-zinc-900");
+  MainContainer?.style.backgroundColor = "black";
+  presentationContainer?.style.backgroundColor = "black";
+  settingsIcon?.src = "../assests/gear-white.png";
   console.log("white mode to dark");
-  localStorage.setItem("current-theme", true);
+  localStorage?.setItem("current-theme", true);
 }
 
 lightMode.onclick = () => {

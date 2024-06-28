@@ -6,9 +6,13 @@
     <title>HiRE HUB</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="./index.js"></script>
+    <script defer src="../gloabl-scripts/toggleNavbar.js"></script>
   </head>
   <body>
-    <div class="w-full h-screen text-zinc-800 bg-white" id="main-container">
+    <div
+      class="w-full h-screen text-zinc-800 bg-white relative"
+      id="main-container"
+    >
       <!-- navbar start section -->
 
       <nav class="w-full h-14 flex items-center justify-around">
@@ -18,8 +22,8 @@
         <ul class="flex gap-5">
           <li><a href="#" class="text-orange-700">Home</a></li>
 
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">Find job</a></li>
+          <li><a href="../profile/index.html">Profile</a></li>
+          <li><a href="../find-jobs/index.html">Find job</a></li>
           <li><a href="#">Status</a></li>
           <li class="relative" id="toggle-icon">
             <a href="#"
@@ -30,7 +34,7 @@
                 id="setting-icon"
             /></a>
             <ul
-              class="absolute w-max bg-zinc-100 p-2 py-6 flex gap-3 flex-col items-start justify-center rounded-lg hidden"
+              class="w-max bg-zinc-50 p-2 py-6 flex gap-3 flex-col items-start justify-center rounded-lg shadow-xl absolute z-50 hidden"
               id="toggle-list"
             >
               <li><a href="#" id="light-mode">Light mode</a></li>
@@ -50,16 +54,38 @@
 
       <div
         id="presentation-container"
-        class="w-full h-[90%] mt-5  flex flex-col gap-5 items-center justify-center "
+        class="w-full h-[90%] mt-5 flex gap-0 items-start justify-start"
       >
-        <div>
-          <h1 class="text-3xl text-orange-500 capitalize font-bold text-shadow">
-            Get hired now
-          </h1>
+        <div
+          class="w-1/2 h-4/5 bg-transparent p-7 flex items-center justify-center"
+        >
+          <!-- inner div -->
+          <div class="w-4/5 flex gap-3 flex-col items-start justify-center">
+            <h1
+              class="text-3xl text-orange-500 capitalize font-bold text-shadow"
+            >
+              Get hired now
+            </h1>
+            <p class="text-xs opacity-50">
+              get premium features for free and land on your dream job
+            </p>
+            <p class="opacity-60">
+              At JobFinder, we believe that finding the perfect job should be
+              easy, efficient, and accessible to everyone. Our platform connects
+              job seekers with top employers, providing a seamless experience to
+              help you land your ideal job.
+            </p>
+            <button
+              class="w-1/2 bg-transparent border border-2 border-zinc-700 p-1 px-5 rounded-full"
+            >
+              get started
+            </button>
+          </div>
+          <!-- inner div -->
         </div>
-        <div class="w-full h-full p-5">
+        <div class="w-full h-full p-5 absolute flex items-center justify-end">
           <iframe
-            class="w-full h-full object-fit "
+            class="w-[70%] h-full object-fit"
             src="https://my.spline.design/roomrelaxingcopy-52d47e7b14fc096bb175413ff8be9847/"
             frameborder="0"
           ></iframe>
