@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Description</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../global-styles/main.css" />
+  </head>
+
+  <body class="bg-gray-100 text-gray-800">
+    <nav class="w-full h-14 flex items-center justify-around">
+      <span class="text-xl font-semibold m-5"
+        >HIRE<span class="bg-orange-500 p-1 rounded-lg">HUB</span></span
+      >
+      <ul class="flex gap-5">
+        <li>
+          <a href="../../home/index.html" class="text-orange-700">Home</a>
+        </li>
+
+        <li><a href="../../profile/index.html">Profile</a></li>
+        <li><a href="../index.html">Find job</a></li>
+        <li><a href="#">Status</a></li>
+        <li class="relative hidden" id="toggle-icon">
+          <a href="#"
+            ><img
+              src="../assests/gear.png"
+              alt="settings"
+              class="w-5 h-5"
+              id="setting-icon"
+          /></a>
+          <ul
+            class="w-max bg-zinc-50 p-2 py-6 flex gap-3 flex-col items-start justify-center rounded-lg shadow-xl absolute z-50 hidden"
+            id="toggle-list"
+          >
+            <li><a href="#" id="light-mode">Light mode</a></li>
+            <li><a href="#" id="dark-mode">Dark mode</a></li>
+            <li>
+              <a
+                href="../credentials//login/index.html"
+                class="text-white text-sm bg-red-500 px-5 rounded-full"
+                >Logout</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="max-w-4xl mx-auto p-6 bg-white shadow-md rounded-lg mt-10">
+      <h1 class="text-3xl font-bold mb-4">Job Title: Software Engineer</h1>
+      <p class="text-gray-600 mb-6">Location: Remote</p>
+
+      <div class="mb-6">
+        <h2 class="text-2xl font-semibold mb-2">Job Overview</h2>
+        <p class="text-gray-700">
+          We are looking for a talented and motivated Software Engineer to join
+          our team. You will be responsible for developing high-quality
+          applications and working closely with our development team.
+        </p>
+      </div>
+
+      <div class="mb-6">
+        <h2 class="text-2xl font-semibold mb-2">Responsibilities</h2>
+        <ul class="list-disc list-inside">
+          <li>Design, develop, and maintain software applications.</li>
+          <li>Collaborate with cross-functional teams.</li>
+          <li>Write clean, scalable, and efficient code.</li>
+          <li>Troubleshoot, debug, and upgrade existing software.</li>
+          <li>Participate in code reviews and team meetings.</li>
+        </ul>
+      </div>
+
+      <div class="mb-6">
+        <h2 class="text-2xl font-semibold mb-2">Requirements</h2>
+        <ul class="list-disc list-inside">
+          <li>Bachelor's degree in Computer Science or related field.</li>
+          <li>Proven experience as a Software Engineer.</li>
+          <li>
+            Strong knowledge of programming languages (e.g., JavaScript, Python,
+            Java).
+          </li>
+          <li>Familiarity with front-end frameworks (e.g., React, Angular).</li>
+          <li>Excellent problem-solving and communication skills.</li>
+        </ul>
+      </div>
+
+      <div class="mb-6">
+        <h2 class="text-2xl font-semibold mb-2">Benefits</h2>
+        <ul class="list-disc list-inside">
+          <li>Competitive salary.</li>
+          <li>Health, dental, and vision insurance.</li>
+          <li>401(k) with company match.</li>
+          <li>Flexible working hours and remote work options.</li>
+          <li>Professional development opportunities.</li>
+        </ul>
+      </div>
+
+      <div class="text-center mt-8">
+        <a
+          href="#"
+          class="bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-700"
+          >Apply Now</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
